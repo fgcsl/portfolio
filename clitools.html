@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Design Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+<body>
+    <div id="nav-placeholder"></div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch("nav.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("nav-placeholder").innerHTML = data;
+                });
+            });
+        </script>
+
+    
+
+  <main class="container">
+    <h1 class="text-center">Command Line Interface Tools</h1>
+
+    <div class="tool">
+        <h3>1. File Tagging & Hierarchy CLI Tool</h3>
+        <p>This command-line utility helps users manage a file hierarchy with relationships between files and directories. Features include:</p>
+        <ul>
+            <li>Add, remove, show, and get info on file-node relationships</li>
+            <li>MySQL backend to store file metadata</li>
+            <li>Shell scripts with modular function handling</li>
+        </ul>
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/fgcsl/file_tagger" target="_blank">View on GitHub</a>
+        </p>
+        <p><strong>Technologies:</strong> Bash, MySQL, Linux CLI</p>
+    </div>
+
+    <div class="tool">
+        <h3>2. ThyPredict Pipeline</h3>
+        <p>
+          A bioinformatics CLI tool for thyroid classification, developed using multiple model scripts written by team members. I integrated these scripts and models into a single, seamless pipeline to ensure end-to-end execution.
+        </p>
+        <p><strong>My Contribution:</strong> Integrated all stages into a single command-line pipeline, automated flow, handled error management, and managed GitHub deployment.</p>
+        <p><strong>Team Contribution:</strong> Model development and core script creation by Nimisha (Stage 1 & 2) and Dr. Shweta (Stage 3) under the supervision of Dr. Dinesh Gupta.</p>
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/tbgicgeb/ThyPredict" target="_blank">View on GitHub</a></p>
+        <p><strong>Technologies:</strong> Python</p>
+    </div>
+
+    <div class="tool">
+        <h3>3. AutoQii2 Pipeline</h3>
+        <p>The AutoQii2 Pipeline can be used to analyzing 16S rRNA amplicon based datasets. AutoQii2 is primarily designed for eliminating multi-step analysis involved in analyzing paired-end or single-end reads using QIIME2. AutoQii2 uses popular fastQC, cutadapt and QIIME2 platforms for performing quality check, adapter trimming, ASV feature identification and taxonomic assignments.        </p>
+        <p><strong>My Contribution:</strong>  Integrated all the steps into a single command-line pipeline.</p>
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/fgcsl/autoqii2" target="_blank">View on GitHub</a></p>
+        <p><strong>Technologies:</strong> Shell Script</p>
+    </div>
+
+    <div class="tool">
+        <h3>4. Pipeline for Molecular adaptation analysis</h3>
+        <p>The Molecular adaptational analysis were done on the bases of Six indices (referred to as cold-adaptor indicators) namely- frequency of acidic residues; proline residues; aromaticity; aliphacity; grand average of hydrophobicity (GRAVY); and the ratio of arginine (R) and lysine (K) were calculated to estimate cold adaptation at amino-acid level.</p>
+        <p><strong>My Contribution:</strong>  Integrated all the steps into a single command-line pipeline.</p>
+        <p><strong>GitHub Repository:</strong> <a href="https://github.com/fgcsl/Molecular-adaptational-analysis-cold" target="_blank">View on GitHub</a></p>
+        <p><strong>Technologies:</strong> Shell Script</p>
+    </div>
+
+
+    <!-- You can keep adding more tools like this -->
+    
+  </main>
+
+</body>
+</html>

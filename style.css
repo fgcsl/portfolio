@@ -1,0 +1,268 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+.h2, h2 {
+    
+    font-size: larger !important;
+    font-weight: 600 !important;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.project-img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.project {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.project-img {
+    width: 100%;
+    max-width: 300px; /* Add a max width to prevent oversized images */
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.project-img:hover {
+    opacity: 0.7;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+
+
+
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-image: url(img/bg.jpg);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+/* Navigation Bar Styling */
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.details {
+    background-color: #00000080;
+    color: burlywood;
+    font-style: italic;
+    /* width: 50%; */
+    padding: 10px;
+}
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    font-size: 1.8em;
+    color: white;
+    cursor: pointer;
+}
+
+/* Cards Section */
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+/*Publication page*/
+.how-section1{
+    margin-top:-15%;
+    padding: 10%;
+}
+.how-section1 h4{
+    color: #ffa500;
+    font-weight: bold;
+    font-size: 30px;
+}
+.how-section1 .subheading{
+    color: #3931af;
+    font-size: 20px;
+}
+.how-section1 .row
+{
+    margin-top: 10%;
+}
+.how-img 
+{
+    text-align: center;
+}
+.how-img img{
+    width: 40%;
+}
+.article {
+    padding: 10px;
+}
+/*Publication page*/
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    /* Mobile Navigation */
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #333;
+        width: 100%;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Cards Layout Mobile */
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1.2em;
+    }
+
+    .logo {
+        font-size: 1.2em;
+    }
+
+    .navbar a {
+        font-size: 0.9em;
+    }
+}
