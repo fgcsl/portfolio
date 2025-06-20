@@ -75,13 +75,22 @@
     </div>
     
 <!-- Inject nav.html -->
+    <!-- Load Navbar from nav.html -->
   <script>
     fetch('components/nav.html')
       .then(res => res.text())
       .then(data => {
         document.getElementById('navbar-placeholder').innerHTML = data;
+        // Re-run the nav toggle script inside nav.html manually
+        const toggle = document.getElementById("menu-toggle");
+        const navbar = document.getElementById("navbar");
+        if (toggle && navbar) {
+          toggle.addEventListener("click", () => {
+            navbar.classList.toggle("active");
+          });
+        }
       });
-  </script> 
+  </script>
 
 </body>
 </html>
