@@ -1,6 +1,6 @@
   <!-- Inject nav.html + Activate toggle -->
   <script>
-    fetch('../components/nav.html')
+    fetch('components/nav.html')
       .then(res => res.text())
       .then(data => {
         document.getElementById('navbar-placeholder').innerHTML = data;
