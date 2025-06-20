@@ -12,14 +12,7 @@
     <!-- Inject Navbar -->
     <div id="navbar-placeholder"></div>
        
-        <!-- Inject nav.html -->
-  <script>
-    fetch('components/nav.html')
-      .then(res => res.text())
-      .then(data => {
-        document.getElementById('navbar-placeholder').innerHTML = data;
-      });
-  </script> 
+
     
     <div class="hero">
         <h1>Freelancing & Services</h1>
@@ -80,7 +73,15 @@
             <a href="mailto:your-email@example.com">Let’s Work Together</a>
         </div>
     </div>
-
+    
+<!-- Inject nav.html -->
+  <script>
+    fetch('components/nav.html')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('navbar-placeholder').innerHTML = data;
+      });
+  </script> 
 
 </body>
 </html>
