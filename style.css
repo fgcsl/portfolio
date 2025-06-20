@@ -221,6 +221,54 @@ nav {
 }
 /*Publication page*/
 
+/*services*/
+        .hero {
+            background: url('background-image.jpg') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px 40px;
+            border-radius: 10px;
+        }
+        .section {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .section h2 {
+            color: #00539C;
+            margin-bottom: 15px;
+        }
+        .service {
+            margin-bottom: 30px;
+        }
+        .contact {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .contact a {
+            background-color: #00539C;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .contact a:hover {
+            background-color: #003d73;
+        }
+/*services*/
+
+
 /* Responsive Styling */
 @media (max-width: 768px) {
     /* Mobile Navigation */
