@@ -109,55 +109,6 @@ header {
     margin-top: 10px;
 }
 
-/* Navigation Bar Styling */
-nav {
-  background-color: #333;
-  padding: 10px;
-}
-
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.logo {
-  color: white;
-  text-decoration: none;
-  font-size: 1.5em;
-}
-
-.navbar {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 20px;
-}
-
-.navbar li {
-  display: inline;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  padding: 10px;
-  transition: background-color 0.3s ease;
-}
-
-.navbar a:hover {
-  background-color: #555;
-  border-radius: 5px;
-}
-
-.menu-toggle {
-  display: none;
-  font-size: 1.8em;
-  color: white;
-  cursor: pointer;
-}
 
 
 /* Cards Section */
@@ -272,28 +223,7 @@ nav {
 /* Responsive Styling */
 @media (max-width: 768px) {
 
-  .navbar {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #333;
-    margin-top: 10px;
-  }
-
-  .navbar.active {
-    display: flex;
-  }
-
-  .navbar li {
-    width: 100%;
-    text-align: left;
-    padding-left: 20px;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
+ 
     /* Cards Layout Mobile */
     .cards {
         flex-direction: column;
@@ -318,3 +248,89 @@ nav {
         font-size: 0.9em;
     }
 }
+
+
+
+/* Custom Navigation */
+.custom-nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+}
+
+/* ✅ Mobile Responsive */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    margin-top: 10px;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .navbar li {
+    width: 100%;
+    text-align: left;
+    padding: 10px 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
