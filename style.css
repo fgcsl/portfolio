@@ -271,8 +271,7 @@ nav {
 
 /* Responsive Styling */
 @media (max-width: 768px) {
-    /* Mobile Navigation */
-@media (max-width: 768px) {
+
   .navbar {
     display: none;
     flex-direction: column;
