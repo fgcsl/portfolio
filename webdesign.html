@@ -10,15 +10,7 @@
 </head>
 <body>
     <div id="nav-placeholder"></div>
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                fetch("nav.html")
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById("nav-placeholder").innerHTML = data;
-                });
-            });
-        </script>
+      
 
 
     <section class="project-section container">
@@ -73,6 +65,7 @@
                 <img src="img/web-portal/apple.jpg" alt="ttp" class="project-img" onclick="window.open('https://fgcsl.ihbt.res.in/applescab/index.php', '_blank');"><br>
                 <a target="_blank" href="https://fgcsl.ihbt.res.in/applescab/index.php"><button type="button" class="btn btn-primary">View</button></a>
             </div>
+            <script src="scripts/navbar.js"></script>
 
 
         </div>
