@@ -60,6 +60,18 @@
     </style>
 </head>
 <body>
+
+    <div id="nav-placeholder"></div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch("nav.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("nav-placeholder").innerHTML = data;
+                });
+            });
+        </script>
+    
     <div class="hero">
         <h1>Freelancing & Services</h1>
     </div>
