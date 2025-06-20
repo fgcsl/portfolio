@@ -111,60 +111,54 @@ header {
 
 /* Navigation Bar Styling */
 nav {
-    background-color: #333;
-    padding: 10px;
+  background-color: #333;
+  padding: 10px;
 }
 
 .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
 }
 
 .navbar {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
 }
 
 .navbar li {
-    display: inline;
+  display: inline;
 }
 
 .navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    transition: background-color 0.3s ease;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  transition: background-color 0.3s ease;
 }
 
 .navbar a:hover {
-    background-color: #555;
-    border-radius: 5px;
+  background-color: #555;
+  border-radius: 5px;
 }
 
-.details {
-    background-color: #00000080;
-    color: burlywood;
-    font-style: italic;
-    /* width: 50%; */
-    padding: 10px;
-}
-/* Mobile Menu Toggle */
 .menu-toggle {
-    display: none;
-    font-size: 1.8em;
-    color: white;
-    cursor: pointer;
+  display: none;
+  font-size: 1.8em;
+  color: white;
+  cursor: pointer;
 }
+
 
 /* Cards Section */
 .cards {
@@ -278,23 +272,28 @@ nav {
 /* Responsive Styling */
 @media (max-width: 768px) {
     /* Mobile Navigation */
-    .navbar {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: #333;
-        width: 100%;
-    }
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #333;
+    margin-top: 10px;
+  }
 
-    .navbar.active {
-        display: flex;
-    }
+  .navbar.active {
+    display: flex;
+  }
 
-    .menu-toggle {
-        display: block;
-    }
+  .navbar li {
+    width: 100%;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 
     /* Cards Layout Mobile */
     .cards {
