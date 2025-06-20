@@ -1,0 +1,30 @@
+<!-- nav.html -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<nav class="custom-nav">
+  <div class="nav-container">
+    <a href="#" class="logo">Abhishek Khatri</a>
+
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <ul class="navbar" id="navbar">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="webdesign.html">Web Design</a></li>
+      <li><a href="videodesign.html">Video Design</a></li>
+      <li><a href="poster.html">Poster Design</a></li>
+      <li><a href="clitools.html">CLI Tools</a></li>
+        <li><a href="services.html">Services</a></li>
+    </ul>
+  </div>
+</nav>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggle = document.getElementById("menu-toggle");
+    const navbar = document.getElementById("navbar");
+
+    toggle.addEventListener("click", () => {
+      navbar.classList.toggle("active");
+    });
+  });
+</script>
