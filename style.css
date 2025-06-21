@@ -263,7 +263,9 @@ header {
 /* Navbar Styling */
 
 
-
+.navbar {
+    transition: all 0.3s ease;
+}
 
 
 
