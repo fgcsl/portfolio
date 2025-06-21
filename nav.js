@@ -29,3 +29,4 @@ function setupNavigation() {
 // Run when DOM is loaded
 document.addEventListener("DOMContentLoaded", setupNavigation);
 
+document.getElementById("menu-toggle")
