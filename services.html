@@ -16,33 +16,7 @@
          <!-- Placeholder where nav will be inserted -->
 <div id="nav-placeholder"></div>
 
-<!-- Script to fetch nav and bind toggle -->
-    <script>
-              // Inject the navigation
-              fetch("nav.html")
-                .then(response => response.text())
-                .then(data => {
-                  document.getElementById("nav-placeholder").innerHTML = data;
-                })
-                .then(() => {
-                  // Wait for the nav to render and then bind the toggle
-                  const bindToggle = () => {
-                    const toggle = document.getElementById("menu-toggle");
-                    const navbar = document.getElementById("navbar");
-            
-                    if (toggle && navbar) {
-                      toggle.addEventListener("click", () => {
-                        navbar.classList.toggle("active");
-                      });
-                    } else {
-                      // Try again after a short delay
-                      setTimeout(bindToggle, 50);
-                    }
-                  };
-            
-                  bindToggle();
-                });
-    </script>
+
 
 
 
@@ -109,7 +83,33 @@
     </div>
 
 </body>
-
+<!-- Script to fetch nav and bind toggle -->
+    <script>
+              // Inject the navigation
+              fetch("nav.html")
+                .then(response => response.text())
+                .then(data => {
+                  document.getElementById("nav-placeholder").innerHTML = data;
+                })
+                .then(() => {
+                  // Wait for the nav to render and then bind the toggle
+                  const bindToggle = () => {
+                    const toggle = document.getElementById("menu-toggle");
+                    const navbar = document.getElementById("navbar");
+            
+                    if (toggle && navbar) {
+                      toggle.addEventListener("click", () => {
+                        navbar.classList.toggle("active");
+                      });
+                    } else {
+                      // Try again after a short delay
+                      setTimeout(bindToggle, 50);
+                    }
+                  };
+            
+                  bindToggle();
+                });
+    </script>
 </html>
 
 
