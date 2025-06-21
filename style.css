@@ -87,19 +87,9 @@ header {
 
 
 /* Basic Styling */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
 
-header {
-    background-image: url(img/bg.jpg);
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
+
+
 
 .profile-img {
     width: 150px;
@@ -247,6 +237,28 @@ header {
     }
 }
 
+
+
+/* Add this to your existing CSS */
+.navbar.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.navbar.active li {
+    padding: 10px 20px;
+}
+
+.custom-nav {
+    position: relative;
+}
 
 /* Navbar Styling */
 .custom-nav {
