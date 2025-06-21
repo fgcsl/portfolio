@@ -12,7 +12,16 @@
 <body>
     <!-- Inject Navbar -->
     <div id="navbar-placeholder"></div>
-       
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                fetch("nav.html")
+                .then(response => response.text())
+                .then(data => {
+                    document.getElementById("nav-placeholder").innerHTML = data;
+                });
+            });
+        </script>
 
     
     <div class="hero">
@@ -74,17 +83,6 @@
             <a href="mailto:khatriabhi2319@gmail.com">Let’s Work Together</a>
         </div>
     </div>
-
-        <script>
-            document.addEventListener("DOMContentLoaded", function() {
-                fetch("nav.html")
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById("nav-placeholder").innerHTML = data;
-                });
-            });
-        </script>
-
 </body>
 
 </html>
