@@ -14,14 +14,14 @@
 
           <!-- Inject nav.html + Activate toggle -->
          <script>
-                  document.addEventListener("DOMContentLoaded", function () {
-                    fetch("nav.html")
-                      .then(response => response.text())
-                      .then(data => {
-                  document.getElementById("nav-placeholder").innerHTML = data;
+              document.addEventListener("DOMContentLoaded", function () {
+                fetch("nav.html")
+                  .then(response => response.text())
+                  .then(data => {
+                    document.getElementById("nav-placeholder").innerHTML = data;
             
-                    // ✅ Now bind the toggle script AFTER nav is injected
-                    setTimeout(() => {
+                    // Use requestAnimationFrame to ensure the DOM is ready
+                    requestAnimationFrame(() => {
                       const toggle = document.getElementById("menu-toggle");
                       const navbar = document.getElementById("navbar");
             
@@ -29,11 +29,14 @@
                         toggle.addEventListener("click", () => {
                           navbar.classList.toggle("active");
                         });
+                      } else {
+                        console.error("Toggle or navbar not found");
                       }
-                    }, 10); // slight delay to ensure nav is injected before script runs
+                    });
                   });
               });
-       </script>
+        </script>
+
 
 
     
