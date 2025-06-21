@@ -28,3 +28,11 @@ function setupNavigation() {
 
 // Run when DOM is loaded
 document.addEventListener("DOMContentLoaded", setupNavigation);
+
+
+
+// In nav.js
+toggle.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+    toggle.textContent = navbar.classList.contains("active") ? "✕" : "☰";
+});
