@@ -83,24 +83,7 @@
             <a href="mailto:khatriabhi2319@gmail.com">Let’s Work Together</a>
         </div>
     </div>
-            <script>
-            fetch('nav.html')
-  .then(res => res.text())
-  .then(data => {
-    document.getElementById('navbar-placeholder').innerHTML = data;
 
-    // Rebind the mobile toggle after HTML is injected
-    const toggle = document.getElementById("menu-toggle");
-    const navbar = document.getElementById("navbar");
-
-    if (toggle && navbar) {
-      toggle.addEventListener("click", () => {
-        navbar.classList.toggle("active");
-      });
-    }
-  });
-
-        </script>
 </body>
 
 </html>
