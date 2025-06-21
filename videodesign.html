@@ -10,31 +10,6 @@
 </head>
 <body>
     <div id="nav-placeholder"></div>
- 
-    <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    fetch("nav.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("nav-placeholder").innerHTML = data;
-
-        // ✅ Now bind the toggle script AFTER nav is injected
-        setTimeout(() => {
-          const toggle = document.getElementById("menu-toggle");
-          const navbar = document.getElementById("navbar");
-
-          if (toggle && navbar) {
-            toggle.addEventListener("click", () => {
-              navbar.classList.toggle("active");
-            });
-          }
-        }, 10); // slight delay to ensure nav is injected before script runs
-      });
-  });
-</script>
-
-
-
     <section class="project-section container">
         <div class="row">
             <h1 class="text-center">Video Design</h1>
@@ -48,7 +23,7 @@
             
         </div>
     </section>
-    
+    <script src="nav.js"></script>
 </body>
 </html>
 
